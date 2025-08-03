@@ -38,7 +38,7 @@ body {
   margin: 0;
   background-color: #435157;
 /*  overflow: hidden; */
-  font-size: 16px;
+  font-size: 1rem;
   color: #FFFFFF;
 /*  color: #A9AC62;*/
 }
@@ -71,8 +71,9 @@ h5 {
     display: flex;
     flex-direction: row;
     padding: .5rem;
-/*	width: 90vw; */
+
 }
+
 .links li:nth-child(odd) {
 	background: #647886;
 	
@@ -143,4 +144,35 @@ a:link {
     margin: .2rem 0;
     padding: 0;
 
+}
+
+.post {
+	background-color: #647886;
+	padding: 1rem;
+	margin: 1rem;
+}
+
+.smalltext {
+	font-size: 0.8rem;
+}
+
+.links {
+    flex-direction: column;
+}
+
+.links li {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    padding: 0.5rem;
+}
+.links a, .links small {
+    display: flex
+}
+.links a {
+    justify-content: flex-start;
+    flex: 1
+}
+.links small {
+    justify-content: flex-end
 }
